@@ -57,7 +57,6 @@ T&			Array<T>::operator[](unsigned int i)
 {
 	if (i >= _size)
 		throw std::out_of_range("You gave an index out of range");
-		// throw std::exception();
 	return _arr[i];
 }
 

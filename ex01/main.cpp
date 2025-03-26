@@ -1,12 +1,7 @@
 #include "iter.hpp"
 
-void printInt(int const& n)
-{
-	std::cout << n << "\n";
-}
-
 template <typename T>
-void printString(T const& value)
+void print_template(T const& value)
 {
 	std::cout << value << "\n";
 }
@@ -14,9 +9,9 @@ void printString(T const& value)
 int main()
 {
 	int arr[] = {1, 2, 3, 4, 5};
-	iter(arr, 5, printInt);
+	iter(arr, 5, print_template);
 	std::cout<<"__________________________________________________"<<std::endl<<std::endl;
 	std::string strArr[] = {"Hello", "World", "C++", "Templates"};
-	iter(strArr, 4, printString);
+	iter(strArr, 4, print_template);
 	return 0;
 }

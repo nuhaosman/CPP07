@@ -13,7 +13,7 @@ void	swap(T& a, T& b)
 }
 
 template <typename T>
-T		min(T const& a, T const& b) //Passing by reference (const&) avoids this copying, allowing the function to work directly with the original variables.
+T		min(T const& a, T const& b)
 {
 	if (a < b)
 		return a;
@@ -22,7 +22,7 @@ T		min(T const& a, T const& b) //Passing by reference (const&) avoids this copyi
 }
 
 template <typename T>
-T		max(T const& a, T const& b)//const in const T& ensures that the function does not modify the original arguments
+T		max(T const& a, T const& b)
 {
 	if (a > b)
 		return a;
